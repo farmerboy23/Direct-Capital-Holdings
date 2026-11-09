@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #FFFFFF;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    
+    <title>Contact Us | Direct Capital Holdings</title>
+    <meta name="description" content="Contact Direct Capital Holdings. Reach out to our real estate investment team for general inquiries or to discuss property acquisition.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Direct Capital Holdings</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#property-form" class="btn btn-primary">Submit Your Property</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section bg-light" style="min-height: 80vh; display: flex; align-items: center;">
+        <div class="container grid-2">
+            
+            <div>
+                <h1>Contact Our Team</h1>
+                <p>If you have general questions regarding our real estate investment criteria or our acquisition process, please reach out to us using the information below.</p>
+                
+                <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 0.5rem;">Business Information</h3>
+                    <p><strong>Email:</strong> contact@directcapitalholdings.com<br>
+                    <strong>Phone:</strong> (555) 123-4567<br>
+                    <strong>Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM EST</p>
+                </div>
+
+                <div class="card bg-navy">
+                    <h3 style="color: white; margin-bottom: 0.5rem;">Looking to sell a property?</h3>
+                    <p style="color: white; margin-bottom: 1rem;">Please use our dedicated property submission form to ensure our acquisitions team receives all necessary details for a professional evaluation.</p>
+                    <a href="index.html#property-form" class="btn btn-secondary">Submit Property Details</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="form-container">
+                    <h3 style="margin-bottom: 1rem;">General Inquiry</h3>
+                    <form id="contact-inquiry-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject *</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message *</label>
+                            <textarea id="contact-message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                    
+                    <div class="form-feedback">
+                        Thank you. Your message has been sent to our team. We will reply as soon as possible.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Direct Capital Holdings</h4>
+                    <p>A professional real estate investment company focused on direct property acquisitions and straightforward financial solutions.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#property-form">Submit Property</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li>Email: contact@directcapitalholdings.com</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Hours: Mon-Fri, 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Direct Capital Holdings. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

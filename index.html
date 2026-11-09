@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #FFFFFF;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CRITICAL FIX: Forces browser to paint a light canvas immediately before CSS loads -->
+    <meta name="color-scheme" content="light">
+    
+    <title>Direct Capital Holdings | Real Estate Investment & Property Acquisition</title>
+    <meta name="description" content="Direct Capital Holdings is a professional real estate investment company specializing in direct property acquisition. Submit your property for evaluation today.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Direct Capital Holdings</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#property-form" class="btn btn-primary">Submit Your Property</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Direct Property Acquisition Solutions.</h1>
+                <p>We are a real estate investment firm that evaluates and acquires residential and commercial properties. Experience a straightforward, professional transaction tailored to your property's unique situation.</p>
+                <div class="hero-actions">
+                    <a href="#property-form" class="btn btn-primary">Submit Your Property</a>
+                    <a href="about.html" class="btn btn-secondary">Learn About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Introduction -->
+    <section class="section">
+        <div class="container grid-2">
+            <div>
+                <h2>Established Real Estate Investment</h2>
+                <p>Direct Capital Holdings focuses on the direct acquisition of real estate assets. We work closely with property owners who are seeking a reliable, efficient, and transparent transaction process without the complexities of a traditional market listing.</p>
+                <p>Our team provides professional property evaluations, clear communication, and straightforward purchasing solutions for a variety of real estate classes, from single-family residential to commercial spaces.</p>
+            </div>
+            <div>
+                <!-- Professional imagery placeholder -->
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional real estate building exterior" style="border-radius: 4px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Approach -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Why Direct Capital Holdings</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Direct Communication</h3>
+                    <p>You work directly with our acquisitions team. We prioritize transparency and clear answers at every stage of the evaluation process.</p>
+                </div>
+                <div class="card">
+                    <h3>Professional Evaluation</h3>
+                    <p>Every property is unique. We conduct thorough due diligence and present straightforward evaluations based on current market realities.</p>
+                </div>
+                <div class="card">
+                    <h3>Efficient Transactions</h3>
+                    <p>We utilize established capital relationships and streamlined processes to close acquisitions efficiently and professionally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form Section -->
+    <section id="property-form" class="section bg-navy">
+        <div class="container">
+            <div class="text-center section-title">
+                <h2>Tell Us About Your Property</h2>
+                <p>Submit your property details below. Our team will review the information and contact you to discuss potential acquisition opportunities.</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="property-submission-form" action="#" method="POST">
+                    
+                    <h3 style="margin-bottom: 1rem; border-bottom: 1px solid #E2E8F0; padding-bottom: 0.5rem;">Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last_name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 2rem; margin-bottom: 1rem; border-bottom: 1px solid #E2E8F0; padding-bottom: 0.5rem;">Property Information</h3>
+                    <div class="form-group">
+                        <label for="street">Property Street Address *</label>
+                        <input type="text" id="street" name="street" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">Property City *</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">Property State *</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zip">Property ZIP Code *</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Property Type *</label>
+                            <select id="type" name="property_type" required>
+                                <option value="" disabled selected>Select Property Type</option>
+                                <option value="Single-Family Residential">Single-Family Residential</option>
+                                <option value="Multi-Family">Multi-Family</option>
+                                <option value="Condominium">Condominium</option>
+                                <option value="Townhouse">Townhouse</option>
+                                <option value="Vacant Land">Vacant Land</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupancy">Property Occupancy *</label>
+                        <select id="occupancy" name="occupancy" required>
+                            <option value="" disabled selected>Select Occupancy Status</option>
+                            <option value="Owner Occupied">Owner Occupied</option>
+                            <option value="Tenant Occupied">Tenant Occupied</option>
+                            <option value="Vacant">Vacant</option>
+                            <option value="Other / Not Sure">Other / Not Sure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additional-info">Additional Property Information (Optional)</label>
+                        <textarea id="additional-info" name="additional_info" placeholder="Provide any additional details regarding condition, current situation, or asking price expectations."></textarea>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Property Information</button>
+                        <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem; color: #666;">By submitting this form, you agree to our Privacy Policy. Your information will only be used to evaluate your property and contact you directly.</p>
+                    </div>
+                </form>
+                
+                <div class="form-feedback">
+                    Thank you. Your property information has been successfully securely submitted. Our acquisitions team will review the details and contact you shortly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Direct Capital Holdings</h4>
+                    <p>A professional real estate investment company focused on direct property acquisitions and straightforward financial solutions.</p>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#property-form">Submit Property</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li>Email: contact@directcapitalholdings.com</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Hours: Mon-Fri, 9:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Direct Capital Holdings. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
